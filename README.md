@@ -37,20 +37,19 @@ Observations!!!
 
 It is possible that we won't get any outliers when we run the program. In this case we need to run again the program until there are some output files generated. That is because the starting point from where   the 30 datapoints are retrieved in the first function needs to have another value.
 
-For finding out the standard deviation the following formula has been used: 
+For finding out the standard deviation the following formula has been used, and the result is the standard deviation: 
 
                    /-----------------------------------------------
                   /  __N___
                  /   \
                 /    /____   (M - VALi)^2
           \    /      i=0      
-   SD =    \  /    ------------------------------------------------
+           \  /    ------------------------------------------------
             \/              N
 
 where: N- total number of datapoints --> 30
        M - mean of the 30 datapoints
        VALi - datapoint value at index i
-       SD - standard deviation
 
 References: --> For this project, I have used some pieces of code for proccessing strings or files from: Geeksforgeeks.com, stackoverflow.com
 
