@@ -11,23 +11,31 @@ Then run the program and check the outputs, and check in the corresponding folde
 
 There are 7 files in this project:
 
-Headers       ___ DataPoints.h (1)
-             |___ Outliers.h (2)
-             |___ FunctionImplementation.h (3)
-SourceFiles   ___ DataPoints.cpp(4)
-             |___ Outliers.cpp(5)
-             |___FunctionImplementation.cpp(6)
-             |___ LSEGCodingChallenge.cpp(7)
+Headers:     DataPoints.h (1)
+             Outliers.h (2)
+             FunctionImplementation.h (3)
+
+
+
+SourceFiles: DataPoints.cpp(4)
+             Outliers.cpp(5)
+             FunctionImplementation.cpp(6)
+              LSEGCodingChallenge.cpp(7)
 
 (1) --> This file contains the definition of the DataPoints class which has 3 attributes: name, timestamp and price; corresponding to the format given in the input file
+
 (2) --> This file contatins the definition of Outliers class which is derived from DataPoints class and has 3 extra attributes: mean of the 30 datapoints, actual mean and % over deviation 
 corresponding to the format given on how the output file should be.
+
 (3) --> This file contatins the definition of the 2 functions specified in the requirments of the project:
         1st function: RetrieveDataPoints ---> Based on the given path file to the input .csv file, 30 datapoints are taken starting from a random line in the file, then those datapoints are
         saved in an array and returned. On top of that the mean of all the datapoints from the files is calculated in the second parameter so we can build the outliers based on that.
         2nd function: RetrieveOutliers ---> Based on the array returned from the 1st function, the mean of the 30 datapoints, the standard deviation and the actual mean are calculated,
         then those outliers are saved in an array and returned to the main function.
+
+
 (4),(5),(6) ---> These files contain the implementation of the things defined at (1),(2),(3)
+
 
 (7) ---> In this file, we have the main function. After we take the input folder where all stock exchanges are, we open each subfolder from it, and from each subfolder we process each .csv file.
          There are a few edge cases treated described by comment //Edge case: ..... such as empty files, no files, unable to open the file, no outliers found and so on.
@@ -47,8 +55,8 @@ For finding out the standard deviation the following formula has been used, and 
            \  /    ------------------------------------------------
             \/              N
 
-where: N- total number of datapoints --> 30
-       M - mean of the 30 datapoints
+where: N- total number of datapoints 
+       M - mean of the 30 datapoints    
        VALi - datapoint value at index i
 
 References: --> For this project, I have used some pieces of code for proccessing strings or files from: Geeksforgeeks.com, stackoverflow.com
