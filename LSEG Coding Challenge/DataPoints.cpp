@@ -1,6 +1,7 @@
 #include "DataPoints.h"
 #include <string>
 #include <iostream>
+#include <math.h>
 
 DataPoints::DataPoints(std::string parameter_name, std::string parameter_timestamp, double parameter_price){	
 	name = parameter_name;

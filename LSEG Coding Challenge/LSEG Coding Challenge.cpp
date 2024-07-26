@@ -17,7 +17,7 @@ int main()
 {
     // Path to the main directory --> Please replace it with your path where you have saved the StockExchange folder
     std::string MainDirectoryPath
-        = "C:\\Users\\lucad\\source\\repos\\StockExchange";
+        = "/mnt/c/Users/lucad/source/repos/LSEG Coding Challenge/LSEG Coding Challenge/StockExchange";
 
     struct stat sb;
 

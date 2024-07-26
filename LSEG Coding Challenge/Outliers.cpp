@@ -1,6 +1,5 @@
 #include "Outliers.h"
 #include<iostream>
-#pragma once
 #include<string>
 #include<vector>
 

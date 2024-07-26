@@ -1,5 +1,4 @@
 #include "FunctionDefinition.h"
-#pragma once
 #include <iostream>
 #include <string>
 #include <vector>
